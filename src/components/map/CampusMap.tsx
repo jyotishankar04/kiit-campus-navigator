@@ -75,7 +75,7 @@ export function CampusMap({
         iconAnchor: [18, 18],
       });
 
-      const marker = L.marker([location.lat, location.lng], { icon })
+      const marker = L.marker([location.lat, location.lng], { icon, title: location.name })
         .addTo(mapRef.current!);
 
       marker.bindPopup(`
@@ -111,7 +111,7 @@ export function CampusMap({
   return (
     <div 
       ref={containerRef} 
-      className="w-full h-full rounded-lg overflow-hidden"
+      className="w-full h-full z-0 rounded-lg overflow-hidden"
       style={{ minHeight: '400px' }}
     />
   );

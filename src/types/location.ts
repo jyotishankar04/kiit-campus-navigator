@@ -1,4 +1,4 @@
-export type LocationCategory = 'academic' | 'hostel' | 'food' | 'medical';
+export type LocationCategory = 'academic' | 'hostel' | 'food' | 'medical' | 'other';
 
 export interface Location {
   id: string;
@@ -29,4 +29,5 @@ export const CATEGORY_CONFIG: Record<LocationCategory, { label: string; icon: st
   hostel: { label: 'Hostel', icon: '🏠', color: 'hostel' },
   food: { label: 'Food', icon: '🍽️', color: 'food' },
   medical: { label: 'Medical', icon: '🏥', color: 'medical' },
+  other: { label: 'Other', icon: '🌟', color: 'other' },
 };

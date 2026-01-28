@@ -191,7 +191,7 @@ export default function Admin() {
 
       <main className="max-w-7xl mx-auto p-4 space-y-6">
         {/* Actions */}
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap z-50 gap-2">
           <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
             <DialogTrigger asChild>
               <Button onClick={() => { setFormData(defaultFormData); setEditingId(null); }}>
@@ -293,7 +293,7 @@ export default function Admin() {
         </div>
 
         {/* Map preview */}
-        <Card>
+        <Card className="z-0">
           <CardHeader>
             <CardTitle className="text-base">Map Preview (Click to add location)</CardTitle>
           </CardHeader>
